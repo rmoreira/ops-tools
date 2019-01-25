@@ -11,10 +11,6 @@ RUN mkdir -p /usr/share/man/man1 && \
     iputils-ping \
     postgresql-client \
     mysql-client \
-    #ruby \
-    #ruby-dev \
-    #python \
-    #python-pip \
     awscli \
     redis-tools \
     dnsutils \
@@ -24,7 +20,7 @@ RUN mkdir -p /usr/share/man/man1 && \
     net-tools \
     vim \
     nmap \
-    netcat && \
+    netcat \
     unzip && \
     rm -rf /var/lib/apt/lists/* /etc/ssh/*key && \
     apt-get clean
