@@ -31,6 +31,8 @@ RUN mkdir -p /usr/share/man/man1 && \
 
 RUN curl -O https://releases.hashicorp.com/vault/0.11.3/vault_0.11.3_linux_amd64.zip && \
     unzip vault_0.11.3_linux_amd64.zip -d /usr/bin/ && \
-    rm vault_0.11.3_linux_amd64.zip
+    rm vault_0.11.3_linux_amd64.zip && chown daemon:daemon /usr/bin/vault
+
+USER daemon
 
 CMD ["/bin/bash"]
