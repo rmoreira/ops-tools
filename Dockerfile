@@ -11,10 +11,10 @@ RUN mkdir -p /usr/share/man/man1 && \
     iputils-ping \
     postgresql-client \
     mysql-client \
-    ruby \
-    ruby-dev \
-    python \
-    python-pip \
+    #ruby \
+    #ruby-dev \
+    #python \
+    #python-pip \
     awscli \
     redis-tools \
     dnsutils \
