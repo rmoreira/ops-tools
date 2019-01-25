@@ -26,7 +26,7 @@ RUN mkdir -p /usr/share/man/man1 && \
     nmap \
     netcat && \
     unzip && \
-    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /var/lib/apt/lists/* /etc/ssh/*key && \
     apt-get clean
 
 RUN curl -O https://releases.hashicorp.com/vault/0.11.3/vault_0.11.3_linux_amd64.zip && \
